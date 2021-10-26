@@ -16,5 +16,5 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd ${{ secrets.PROJECT_PATH }} 
+            cd ${{ secrets.PROJECT_PATH }}/my-app
             git pull origin main
