@@ -19,4 +19,5 @@ jobs:
             cd ${{ secrets.PROJECT_PATH }}/my-app
             git pull origin main
             npm install
+            npm run build
             pm2 restart "npm run start"
